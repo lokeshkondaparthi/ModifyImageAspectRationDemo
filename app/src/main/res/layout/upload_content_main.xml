@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <Button
+            android:id="@+id/content_main_change_sz_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Image Size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before scalled"
+            android:textSize="12sp"
+            android:textColor="#ff2323"/>
+        <ImageView
+            android:id="@+id/content_main_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:tooltipText="before scalled"
+            android:scaleType="center"/>
+        <ImageView
+            android:id="@+id/content_main_scalled_image_iv"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:tooltipText="after scalled"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After scalled"
+            android:textSize="12sp"
+            android:textColor="#ff2323"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="upload"
+            android:onClick="uploadToServer"/>
+
+    </LinearLayout>
+</ScrollView>
